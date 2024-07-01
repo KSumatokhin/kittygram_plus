@@ -1,0 +1,41 @@
+###
+GET http://127.0.0.1:8000/owners/
+
+###
+POST http://127.0.0.1:8000/owners/
+content-type: application/json
+
+{
+    "first_name": "Grandmom Larisa",
+    "last_name": "Savenko"
+}
+
+###
+GET http://127.0.0.1:8000/cats/
+
+###
+POST http://127.0.0.1:8000/cats/
+content-type: application/json
+
+{
+    "name": "Снежок",
+    "color": "#228B22",
+    "birth_year": 2010,
+    "owner": 1,
+    "achievements": [
+        {"name": "поймал мышку"},
+        {"name": "разбил вазу"}
+    ]
+}
+
+###
+PATCH http://127.0.0.1:8000/cats/4/
+content-type: application/json
+
+{
+    "name": "hgfdyh",
+    "color": "white"
+}
+
+###
+GET http://127.0.0.1:8000/mycats/

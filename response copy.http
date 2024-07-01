@@ -1,0 +1,27 @@
+###
+POST http://127.0.0.1:8000/cats/
+content-type: application/json
+
+{
+    "name": "Барсик",
+    "color": "Белый",
+    "birth_year": 2017,
+    "owner": 1
+}
+
+
+###
+POST https://1ff80d3a-1d19-45e9-9935-613356fdee09.serverhub.praktikum-services.ru/api/v1/posts/
+content-type: application/json
+
+{
+    "text": "Текст для моего поста",
+    "author": 1,
+    "tag": [
+        {"name": "хобби"},
+        {"name": "личное"}
+        ]
+} 
+
+###
+GET https://1ff80d3a-1d19-45e9-9935-613356fdee09.serverhub.praktikum-services.ru/api/v1/posts/
